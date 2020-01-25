@@ -1,0 +1,21 @@
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.onde-ouvir img{
+    height: 35px;
+    width: 35px;;
+}
+
+.onde-ouvir a {
+    margin-right: 20px;
+}
+
+.apple-podcast-icon {
+    height: 39px !important;
+    width: 39px !important;
+}
