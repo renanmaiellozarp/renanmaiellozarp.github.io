@@ -1,45 +1,93 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/base.css">
-<link rel="stylesheet" type="text/css" href="css/estrutura.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
-<title></title>
+  <meta charset="UTF-8">
+  <title>ZCast</title>
+  <link rel="icon" href="images/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/estrutura.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title></title>
 </head>
+
 <body>
-    <div class="main-container">
-        <div class="header">
-            <p>ZCAST</p>
-            <div class="onde-ouvir">
-                <a href="http://www.zarpsystem.com.br/#home">
-                    <img src="images/spotify.png" alt="Spotify">                    
-                </a>
-                <a href="http://www.zarpsystem.com.br/#home">
-                    <img src="images/apple-podcast.png" alt="Apple Podcast" class="apple-podcast-icon">
-                </a>                
-            </div>            
-        </div>
-        <div class="conteudo-container">
-            <!-- <div class="episodio">
-                <img src="images/episodios/001.jpg" alt="">
-                <p>teste</p>
-            </div> -->
-            <div class="episodio-container">
-                <div class="episodio">
-                    <img src="images/episodios/001.jpg" alt="">
-                    <p>teste</p>
-                </div>
-                <div class="episodio">
-                    <img src="images/episodios/001.jpg" alt="">
-                    <p>teste</p>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            Copyright 2019 - Zarpsystem
-        </footer>
+  <div class="main-container">
+    <div class="header">
+      <img class="logo" src="/images/logo-zcast.png" alt="Logo ZCast">
+      <div class="onde-ouvir">
+        <a href="https://open.spotify.com/show/7eROLmurP0cNpbJQ7acWJM" target="_blank">
+          <img src="images/spotify.png" alt="Spotify">
+        </a>
+        <a href="http://www.zarpsystem.com.br/#home">
+          <img src="images/apple-podcast.png" alt="Apple Podcast" class="apple-podcast-icon">
+        </a>
+      </div>
     </div>
+    <div class="container">
+      <div class="conteudo-container" style="margin-top: 70px;">
+        <div class="imagem-container">
+          <img src="images/episodios/001.jpg" alt="Episódio 01" class="imagem-episodio">
+        </div>
+        <div class="descricao-container">
+          <div>
+            <p class="titulo-episodio">Episódio 01 - Boas Práticas de Programação</p>
+            <p class="descricao-episodio">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="player">
+              <audio controls>  
+                <source src="https://podcast.zarp.tech/audio/podcast-01-boas-praticas-programacao.mp3" type="audFio/ogg">
+                <source src="https://podcast.zarp.tech/audio/podcast-01-boas-praticas-programacao.mp3" type="audio/mpeg">  
+                Your browser does not support the audio element.
+              </audio>
+          </div>
+        </div>
+      </div>
+      <div class="conteudo-container" style="margin-bottom: 70px; margin-top: 100px;">
+        <div class="imagem-container">
+          <img src="images/episodios/001.jpg" alt="Episódio 01" class="imagem-episodio">
+        </div>
+        <div class="descricao-container">
+          <div>
+            <p class="titulo-episodio">Episódio 02 - Segurança no Desenvolvimento Web</p>
+            <p class="descricao-episodio">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div class="player">
+            <audio controls>  
+              <source src="https://podcast.zarp.tech/audio/podcast-02-seguranca-no-desenvolvimento-web.mp3" type="audFio/ogg">
+              <source src="https://podcast.zarp.tech/audio/podcast-02-seguranca-no-desenvolvimento-web.mp3" type="audio/mpeg">  
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>        
+    <footer class="footer">
+      <a href="http://www.zarpsystem.com.br/#home" target="_blank">
+        <img class="logo-zarp" src="/images/logo-zarp.png" alt="Logo Zarp">
+      </a>
+      <div class="info-footer">
+        <div>          
+          <p class="endereco">Sede Unidade São Carlos | +55 16 3307-6809
+          <p class="endereco">Al. das Hortências, 436</p>          
+          <p class="endereco">São Carlos - SP CEP 13566-533</p>
+          <p class="endereco">contato@zarpsystem.com.br</p>
+        </div>
+        <div>
+          <p class="endereco">Unidade Araraquara | +55 16 4042-1696</p>
+          <p class="endereco">Av. 7 de Setembro, 371 (Global labs)</p>
+          <p class="endereco">Araraquara - SP CEP 14800-390</p>
+        </div>  
+      </div>
+    </footer>
+  </div>
 </body>
+<script type="text/javascript" src="js/players.js"></script>
 </html>

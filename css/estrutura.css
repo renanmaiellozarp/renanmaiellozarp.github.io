@@ -2,7 +2,13 @@
     display: flex;
     max-width: 100%;
     flex-direction: column;
-    width: 100%;    
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
 }
 
 .main-container .header {
@@ -24,43 +30,102 @@
     margin-right: 30px;
 }
 
-.main-container .conteudo-container {
+.container {
+    padding: 30px; 
+    flex: 1;
+}
+
+.conteudo-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: auto;
-}
-
-.main-container .conteudo-container .episodio-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-.main-container .conteudo-container .episodio {
-    width: 70%;
-    display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
 }
 
-.main-container .conteudo-container .episodio img {
-    width: 50%;
-    height: 100%;
+.imagem-container {
+    width: 500px;
+    min-width: 500px;
 }
 
-.main-container .footer {
-    /* position: fixed;
-    left: 0;
-    bottom: 0; */
-    width: 100%;
-    height: 60px;
+.descricao-container {
     display: flex;
-    font-size: 12px;
+    width: 550px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 0px 0px 20px;
+}
+
+.titulo-episodio {
+    font-size: 2vw;    
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.descricao-episodio {
+    color: #858585;
+    font-size: 1vw;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.imagem-episodio {
+    width: 100%;
+    height: auto;
+}
+
+.player audio {
+    outline: none;
+}
+
+.footer {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
     background-color: #000000;
-    color: #FFFFFF;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .info-footer {
+    display: flex;
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+.footer .info-footer div {
+    margin-right: 30px;
+}
+
+.footer .endereco {
+    color: #858585;
+    margin-top: 15px;
+}
+
+
+.footer .logo-zarp {
+    width: 150px;
+    height: auto;
+    margin-left: 100px;
+}
+
+@media only screen and (max-width : 1100px) {
+    
+ .descricao-container {
+     margin: 20px;
+     max-width: 500px;
+ }
+
+ .titulo-episodio {
+     font-size: 4vw;
+ }
+
+ .descricao-episodio {
+     font-size: 2vw;
+     margin-bottom: 30px;
+ }
 }
